@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="280.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comp1206.sushi.server.TableController">
+   <children>
+      <TableView fx:id="defaultTableView" prefHeight="280.0" prefWidth="100.0">
+         <columns>
+
+         </columns>
+      </TableView>
+   </children>
+</VBox>

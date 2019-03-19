@@ -1,0 +1,33 @@
+.button{
+    -fx-background-color: #2A2E37;
+    -fx-text-fill: #F76314;
+    -fx-font: 13px Helvetica, Arial;
+}
+
+.button:hover{
+    -fx-background-color: #717379;
+    -fx-border-style: hidden hidden hidden hidden;
+    -fx-border-color: #FEDBD0;
+}
+
+#customize {
+
+    -fx-background-color: #F4F4F4;
+    -fx-text-fill: #2A2E37;
+    -fx-font: 15px Helvetica, Arial, Sans-Serif;
+    -fx-font-weight: bold;
+
+}
+
+#customize:hover{
+    -fx-background-color: #717379;
+}
+
+
+
+.label{
+
+    -fx-text-fill: linear-gradient(#F76314 0%, #FEF3EF 100%);
+    -fx-font: 30px Helvetica, Arial;
+
+}
