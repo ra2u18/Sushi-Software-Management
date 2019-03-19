@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneMain" prefHeight="627.0" prefWidth="939.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comp1206.sushi.server.Controller">
+   <children>
+      <AnchorPane prefHeight="627.0" prefWidth="939.0" style="-fx-background-color: #2A2E37; -fx-shape: &quot;M 180 560 L 0 560 L 0 0 L 900 0 L 900 60 L 180 60 L 180 550&quot;;">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutY="67.0" prefHeight="560.0" prefWidth="180.0" style="-fx-background-color: #FFFBFA; -fx-shape: &quot;M 180 560 L 0 560 L 0 60 L 60 0 L 180 0 L 180 560 &quot;;" stylesheets="@../styles/style.css">
+               <children>
+                  <ImageView fitHeight="92.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@../images/useraccount.png" />
+                     </image>
+                  </ImageView>
+                  <Label style="-fx-text-fill: #F76314;" text="User Account">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="35.0" mnemonicParsing="false" onAction="#overviewAction" prefHeight="35.0" prefWidth="200.0" text="Overview">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnOrders" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="10.0" layoutY="172.0" mnemonicParsing="false" onAction="#setupButton" prefHeight="35.0" prefWidth="200.0" text="Orders">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/shopping-bag.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnDishes" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="10.0" layoutY="172.0" mnemonicParsing="false" onAction="#setupButton" prefHeight="35.0" prefWidth="200.0" text="Dishes">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/dish.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnIngredients" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="10.0" layoutY="209.0" mnemonicParsing="false" onAction="#setupButton" prefHeight="35.0" prefWidth="200.0" text="Ingredients">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/groceries.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnSuppliers" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="10.0" layoutY="172.0" mnemonicParsing="false" onAction="#setupButton" prefHeight="35.0" prefWidth="200.0" text="Suppliers">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/shipped.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnStaff" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="10.0" layoutY="209.0" mnemonicParsing="false" onAction="#setupButton" prefHeight="35.0" prefWidth="200.0" text="Staff">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/service.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnDrones" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="10.0" layoutY="246.0" mnemonicParsing="false" onAction="#setupButton" prefHeight="35.0" prefWidth="200.0" text="Drones">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/drone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnUsers" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="10.0" layoutY="283.0" mnemonicParsing="false" onAction="#setupButton" prefHeight="35.0" prefWidth="200.0" text="Users">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/avatar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnPostcodes" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="10.0" layoutY="431.0" mnemonicParsing="false" onAction="#setupButton" prefHeight="35.0" prefWidth="200.0" text="Postcodes">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/location.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnConfiguration" alignment="BASELINE_LEFT" graphicTextGap="35.0" layoutX="10.0" layoutY="468.0" mnemonicParsing="false" onAction="#setupButton" prefHeight="35.0" prefWidth="200.0" text="Configuration">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </Button>
+               </children></VBox>
+            <AnchorPane fx:id="anchorPaneSwap" layoutX="180.0" layoutY="67.0" prefHeight="558.0" prefWidth="760.0" stylesheets="@../styles/anchorPaneSwap.css">
+              <children>
+                  <fx:include fx:id="table" source="Table.fxml" />
+
+                 <ScrollPane fx:id="scrollPane" layoutY="280.0" prefHeight="278.0" prefWidth="760.0" style="-fx-background-color: #FFFBFA;">
+                     <content>
+                        <VBox fx:id="functionalityContainer" prefHeight="93.0" prefWidth="759.0" stylesheets="@../styles/functionalityPane.css">
+                           <HBox spacing="20.0">
+                           <children>
+
+                              <Button fx:id="btnAdd" graphicTextGap="20.0" maxWidth="200.0" mnemonicParsing="false" onAction="#addFunctionalityPane" prefWidth="100.0" text="Add">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@../images/plus-button.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                              </Button>
+                                 <ToggleButton fx:id="btnEdit" graphicTextGap="10.0" maxWidth="200.0" mnemonicParsing="false" prefWidth="100.0" text="Edit">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@../images/modify.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic>
+                                 </ToggleButton>
+                              <Button fx:id="btnDelete" graphicTextGap="10.0" maxWidth="200.0" mnemonicParsing="false" onAction="#deleteRecord" prefWidth="100.0" text="Delete">
+                                    <graphic>
+                                       <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                             <Image url="@../images/rubbish-bin.png" />
+                                          </image>
+                                       </ImageView>
+                                    </graphic></Button>
+
+                           </children>
+                              <VBox.margin>
+                                 <Insets />
+                              </VBox.margin>
+                              <padding>
+                                 <Insets bottom="15.0" />
+                              </padding>
+                           </HBox>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+
+              </children>
+            </AnchorPane>
+            <HBox alignment="BASELINE_CENTER" prefHeight="100.0" prefWidth="940.0" spacing="100.0" stylesheets="@../styles/topPane.css">
+               <children>
+                  <Button fx:id="btnClose" graphicTextGap="20.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#closeApp" text="Leave">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label text="Sushi Company Software">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="btnModify" graphicTextGap="20.0" mnemonicParsing="false" onAction="#setupModify" text="Apply changes">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets top="7.0" />
+               </padding>
+            </HBox>
+
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
